@@ -1,0 +1,15 @@
+{
+  "name": "school-api",
+  "version": "1.0.0",
+  "description": "node js school details api",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "author": "devsk",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "mysql2": "^3.11.4"
+  }
+}
