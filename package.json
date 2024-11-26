@@ -4,7 +4,7 @@
   "description": "node js school details api",
   "main": "server.js",
   "scripts": {
-    "dev": "node server.js"
+    "dev": "nodemon server.js"
   },
   "author": "devsk",
   "license": "ISC",

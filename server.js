@@ -38,8 +38,8 @@ app.post('/addSchool', async (req, res) => {
     }
 
     // Insert new school into database
-    const query = 'INSERT INTO schools SET ?';
-    const result = await db.execute(query, { name, address, latitude, longitude });
+    const query = `INSERT INTO schools (name, address , latitude ,longitude ) VALUES ('${name}', '${address}' , '${latitude}' ,'${longitude}') `;
+    const result = await db.execute(query);
 
     res.send({ message: 'School added successfully', id: result[0].insertId });
   } catch (error) {
