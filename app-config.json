@@ -1,8 +1,8 @@
 {
 	"command": "node server.js",
-	"build_path": "/home/devsk/Desktop/school api",
+	"build_path": "/home/devsk/Desktop/educase-assignment",
 	"stack": "node18",
 	"env_variables": {},
-	"memory": 256,
+	"memory": 2048,
 	"scripts": {}
 }

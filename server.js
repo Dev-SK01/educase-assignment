@@ -20,7 +20,7 @@ app.use(express.json());
 
 // home route 
 
-app.get('/' , (req ,res) =>{
+app.get('/' , (req,res) =>{
     res.send("oops! It's an Home Route ");
 })
 // Add School API
@@ -94,6 +94,6 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
   return distance;
 }
 
-app.listen(PORT, () => {
-  console.log(`Server listening on port ${PORT}`);
+app.listen(process.env.X_ZOHO_CATALYST_LISTEN_PORT || PORT, () => {
+  console.log(`server is running on PORT this ${PORT} number :)`);
 });
